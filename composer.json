@@ -1,0 +1,32 @@
+{
+    "name": "jsphp/jsphp",
+    "description": "create a javascript object inside PHP itself, even using dot notation",
+    "homepage": "https://github.com/ibrahimab/jsphp",
+    "version": "dev-master",
+    "keywords": ["javascript", "php", "serialization", "json"],
+    "type": "library",
+    "author": {
+        "name": "Ibrahim Abdullah",
+        "email": "ibrahim@ingeniousdev.nl"
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jsphp\\": "src/Jsphp"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jsphp\\Test\\": "tests/Jsphp/Test"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
